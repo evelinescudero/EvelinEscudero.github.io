@@ -1,416 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cv Escudero Evelin</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <main class="main-content">
-            <section class="left-section">
-                <div class="left-content">
-                    <div class="profile">
-                        <div class="image">
-                            <img
-                                src="https://randomuser.me/api/portraits/women/76.jpg"
-                                alt="modelo">
-                        </div>
-                        <h2 class="name"> Evelin Escudero</h2>
-                        <p class="career">Licenciada en administración- tecnica
-                            en fronted- ingeniera en software</p>
-                    </div>
-                    <div class="contact-info">
-                        <h3 class="main-title">Contacto - Información</h3>
-                        <ul>
-                            <li>
-                                <i class="fa fa-calendar"></i>
-                                <p><a href="https://www.calendario.com">
-                                        04/12/98</a></p>
-                            </li>
-                            <li>
-                                <i class="fa fa-phone"></i>
-                                <p><a href="https://www.celular.com/">
-                                        23231111111</a></p>
-                            </li>
-                            <li>
-                                <i class="fa fa-fax"></i>
-                                <p><a href="https://www.fax.com/">evelin@pfp.com</a></p>
-                            </li>
-                            <li>
-                                <i class="fa fa-globe"></i>
-                                <p><a href="https://www.google.com/">www.evelin.com</a></p>
-                            </li>
-                            <li>
-                                <i class="fa fa-facebook-f"></i>
-                                <p><a href="https://www.facebook.com/">
-                                        Evelin_pfp</a></p>
-                            </li>
-                            <li>
-                                <i class="fa fa-instagram"></i>
-                                <p><a href="https://www.instagram.com/">Evelin_pfp</a></p>
-                            </li>
-                            <li>
-                                <i class="fa fa-youtube-play"></i>
-                                <p><a href="https://www.youtube.com/">Evelin_pfp</a></p>
-                            </li>
-                            <li>
-                                <i class="fa fa-map-marker"></i>
-                                <p><a href="https://www.googlemaps.com/">Avanida
-                                        Siempre Viva 742</a></p>
-                            </li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>EVELIN ESCUDERO</title>
+</head>
+
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>EME</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#experiencia" onclick="seleccionar(this)">EXPERIENCIAS</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
+                    </nav>
+                    <!--Iconos del menu resposive--> 
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
-                    <div class="skills-section">
-                        <h3 class="main-title">Habilidades</h3>
-                        <ul>
-                            <li>
-                                <p class="skill-title">Javascript</p>
-                                <div class="progress-bar">
-                                    <div class="progress js-progress"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <p class="skill-title">Canva</p>
-                                <div class="progress-bar">
-                                    <div class="progress ps-progress"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <p class="skill-title">Adobe Express</p>
-                                <div class="progress-bar">
-                                    <div class="progress ps-progress"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <p class="skill-title">Node js</p>
-                                <div class="progress-bar">
-                                    <div class="progress ps-progress"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <p class="skill-title">html/css</p>
-                                <div class="progress-bar">
-                                    <div class="progress ps-progress"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <p class="skill-title">Python</p>
-                                <div class="progress-bar">
-                                    <div class="progress ps-progress"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <p class="skill-title">MS Windows</p>
-                                <div class="progress-bar">
-                                    <div class="progress ps-progress"></div>
-                                </div>
-                            </li>
-
-                            <div class="skills-section">
-                                <h3 class="main-title">Dominio de Idiomas</h3>
-                                <ul>
-                                    <li>
-                                        <p class="skill-title">Ingles</p>
-                                        <div class="progress-bar">
-                                            <div class="progress ps-progress"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="skill-title">Frances</p>
-                                        <div class="progress-bar">
-                                            <div class="progress ps-progress"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="skill-title">portugués</p>
-                                        <div class="progress-bar">
-                                            <div class="progress ps-progress"></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="references-section">
-                            <h3 class="main-title">Referencia</h3>
-                            <div class="referee">
-                                <h6 class="sub-title"> Pablo</h6>
-                                <p class="sub-para">Programa</p>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-phone"></i>
-                                        0001111011111
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-fax"></i>
-                                        pablo.backy@ardigans
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="referee">
-                                <h6 class="sub-title">Tyrone</h6>
-                                <p class="sub-para">Investiga</p>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-phone"></i>
-                                        101010111001
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-fax"></i>
-                                        Tyrone.backy@ardigans
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="referee">
-                                <h6 class="sub-title">Uniqua</h6>
-                                <p class="sub-para">Planea</p>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-phone"></i>
-                                        101010111002
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-fax"></i>
-                                        Uniqua.backy@ardigans
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="referee">
-                                <h6 class="sub-title">Tasha</h6>
-                                <p class="sub-para">Investiga</p>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-phone"></i>
-                                        101010111001
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-fax"></i>
-                                        Tasha.backy@ardigans
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="referee">
-                                <h6 class="sub-title">Austin</h6>
-                                <p class="sub-para">Programa</p>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-phone"></i>
-                                        101010111001
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-fax"></i>
-                                        Austin.backy@ardigans
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-
-                </section>
-                <section class="right-section">
-                    <div class="right-main-content">
-                        <section class="about sect">
-                            <h2 class="right-title">Acerca de mí</h2>
-                            <p class="para">
-                                Evelin Escudero tengo 25 años. Vivía en las
-                                afueras de una gran ciudad y ahora vivo a unas
-                                cuadras de la misma. Me gusta estudiar, prender
-                                nuevos desafios. Me adapto rapido y soy
-                                exigente. <br>
-                                <br>
-                                Emprendi una empresa de indumentaria en Estados
-                                Unidos con mi tío, por el cual en el presente
-                                estamos creando más surcusales en Europa.
-                            </p>
-                        </section>
-
-                        <section class="experince sect">
-                            <h2 class="right-title"> Experiencia</h2>
-                            <div class="timeline">
-                                <div class="left-tl-content">
-                                    <h5 class="tl-title"> Jefa ejecutiva</h5>
-                                    <p class="para">2017 - Presente</p>
-                                </div>
-                                <div class="right-tl-content">
-                                    <div class="tl-content">
-                                        <h5 class="tl-title-2">Jefa Ejecutiva</h5>
-                                        <p class="para">
-                                            Diregir y negociar con el mercado
-                                            exterior
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="left-tl-content">
-                                    <h5 class="tl-title"> Administradora</h5>
-                                    <p class="para">2015 - 2016</p>
-                                </div>
-                                <div class="right-tl-content">
-                                    <div class="tl-content">
-                                        <h5 class="tl-title-2">Administradora</h5>
-                                        <p class="para">
-                                            Planificar y organizar en Ong P
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="left-tl-content">
-                                    <h5 class="tl-title">Voluntariada</h5>
-                                    <p class="para">2014 - 2015</p>
-                                </div>
-                                <div class="right-tl-content">
-                                    <div class="tl-content">
-                                        <h5 class="tl-title-2">Voluntariada</h5>
-                                        <p class="para">
-                                            Voluntaria en tareas ampleas y
-                                            diversas
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </section>
-                        <section class="education sect">
-                            <h2 class="right-title"> Educacion</h2>
-                            <div class="timeline">
-                                <div class="left-tl-content">
-                                    <h5 class="tl tl-title"> Lic. Administración</h5>
-                                    <p class="para"> 2019 a 2023</p>
-                                </div>
-                                <div class="right-tl-content">
-                                    <div class="tl-content">
-                                        <h5 class="tl-title-2">Lic. en
-                                            Administración</h5>
-                                        <p class="para">
-                                            Univerdad Nacional Unlu
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="left-tl-content">
-                                    <h5 class="tl tl-title">ingenieria en
-                                        software</h5>
-                                    <p class="para">2016 - 2019</p>
-                                </div>
-                                <div class="right-tl-content">
-                                    <div class="tl-content">
-                                        <h5 class="tl-title-2">Ingenieria en
-                                            software</h5>
-                                        <p class="para">
-                                            Academy international California
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="left-tl-content">
-                                    <h5 class="tl tl-title">Tecnica Fonted</h5>
-                                    <p class="para">2015 - 2018</p>
-                                </div>
-                                <div class="right-tl-content">
-                                    <div class="tl-content">
-                                        <h5 class="tl-title-2">Tecnica Fonted</h5>
-                                        <p class="para">
-                                            Universidad Harvad
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </section>
-                        <section class="awards sect">
-                            <h2 class="right-title"> premios</h2>
-                            <div class="timeline">
-                                <div class="left-tl-content">
-                                    <h5 class="tl-title">Premio Dedicacion
-                                        Empresarial</h5>
-                                    <p class="para">2020</p>
-                                </div>
-                                <div class="right-tl-content">
-                                    <div class="tl-content">
-                                        <h5 class="tl-title-2">Premio Dedicacion
-                                            Empresarial</h5>
-                                        <p class="para">
-                                            Jefa Ejecutiva
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="left-tl-content">
-                                    <h5 class="tl-title">Premio Exportación</h5>
-                                    <p class="para">2019</p>
-                                </div>
-                                <div class="right-tl-content">
-                                    <div class="tl-content">
-                                        <h5 class="tl-title-2">Premio
-                                            Exportación</h5>
-                                        <p class="para">
-                                            Jefa Ejecutiva
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="left-tl-content">
-                                    <h5 class="tl-title">Premio Promoción
-                                        Empresarial</h5>
-                                    <p class="para">2018</p>
-                                </div>
-                                <div class="right-tl-content">
-                                    <div class="tl-content">
-                                        <h5 class="tl-title-2">Premio Promoción
-                                            Empresarial</h5>
-                                        <p class="para">
-                                            Jefa Ejecutiva
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="left-tl-content">
-                                    <h5 class="tl-title">Premio Comercio</h5>
-                                    <p class="para">2016</p>
-                                </div>
-                                <div class="right-tl-content">
-                                    <div class="tl-content">
-                                        <h5 class="tl-title-2">Premio Comercio</h5>
-                                        <p class="para">
-                                            Administradora en lo international
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="left-tl-content">
-                                    <h5 class="tl-title">Premio Servicios</h5>
-                                    <p class="para">2015</p>
-                                </div>
-                                <div class="right-tl-content">
-                                    <div class="tl-content">
-                                        <h5 class="tl-title-2">Premio Servicios</h5>
-                                        <p class="para">
-                                            Voluntaria en Brasil
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </section>
-                    </div>
-                </section>
+                </div>
+            </header>
+            <div class="presentacion">
+                <a class="bienvenidos">Bienvenidos</a>
+                <h2>Soy <span>Evelin Escudero</span> ,Licenciada en Administración-Tecnica en Fronted-Ingeniera en Software</h2>
+                <p class="descripcion">Evelin Escudero tengo 25 años. Vivo a unas cuadras de la ciudad. Me gusta estudiar, prender nuevos desafios. Me adapto rapido y soy exigente.Emprendi una empresa de indumentaria en Estados Unidos con mi tío, por el cual en el presente estamos creando más surcusales en Europa.</p>
+                <a href="#contacto">Ir a contacto</a>
             </div>
-        </main>
-    </body>
+                </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/76.jpg" alt="escritorio">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mí</p>
+            <h2>Hola, soy <span>Evelin Escudero</span></h2>
+            <h3>LICENCIADA EN ADMINISTRACIÓN- TECNICA EN FRONTED- INGENIERA EN SOFTWARE</h3>
+            <p>Evelin Escudero tengo 25 años. Vivía en las afueras de una gran ciudad y ahora vivo a unas cuadras de la misma. Me gusta estudiar, prender nuevos desafios. Me adapto rapido y soy exigente.Emprendi una empresa de indumentaria en Estados Unidos con mi tío, por el cual en el presente estamos creando más surcusales en Europa.</p>
+            <p>En los ultimos empleos me he enfrentados a nuevos desafios que pude superarlos. He creado otro emprendimiento que en la actualidad es todo un exito.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--SECCION EXPERIENCIA-->
+    <section id="experiencia">
+        <h3 class="titulo-seccion">MIS EXPERIENCIAS</h3>
+        <div class="fila">
+            <div class="experiencia">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Ejefa Ejecutiva</h4>
+                <hr>
+                <ul class="experiencia-tag">
+                    <p>Dirigir y Negociar con el Mercado Exterior</p> 
+                </ul>
+                <p>Premio Dedicación Empresarial. Premio Exportacón. Premio Promoción Empresarial</p>
+            </div>
+            <div class="experiencia">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Administradora</h4>
+                <hr>
+                <ul class="experiencia-tag">
+                    <li>Premio: </li>
+                    <li> Premio Comercio.</li>
+                </ul>
+                <p>Planificar y Organizar en Ong P</p>
+            </div>
+            <div class="experiencia">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Voluntariada</h4>
+                <hr>
+                <ul class="experiencia-tag">
+                    <li>Premios: </li>
+                    <li> Servicios </li>
+                </ul>
+                <p>Voluntariada en tareas ampleas y diversas.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--SECCION HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skills">
+            <div class="info">
+                <a><span class="lista"></span>Html & Css</a>
+                <span class="porcentaje">98%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <div id="html" class=""></div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <a><span class="lista"></span>Javascript</a>
+                <span class="porcentaje">95%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <div id="Javascript" class=""></div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <a><span class="lista"></span>Canva</a>
+                <span class="porcentaje">87%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <div id="Canva" class=""></div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <a><span class="lista"></span>Adobe Express</a>
+                <span class="porcentaje">85%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <div id="Adobe Express" class=""></div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <a><span class="lista"></span>Node JS</a>
+                <span class="porcentaje">78%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <div id="Node JS" class=""></div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <a><span class="lista"></span>Python</a>
+                <span class="porcentaje">75%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <div id="Python" class=""></div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <a><span class="lista"></span>MS Windows</a>
+                <span class="porcentaje">68%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <div id="MS Windows" class=""></div>
+        </div>
+
+        <!--SECCION IDIOMAS-->
+    <div class="contenedor-skills" id="skills">
+        <h3>DOMINIO DE IDIOMAS</h3>
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span> Ingles</p>
+            </div>
+        </div>
+            
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>Portugués</p>
+            </div>
+        </div>
+        
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>Frances</p>
+            </div>
+        </div>
+    </div>
+
+        
+        
+    </div>
+    
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactamos ahora</h3>
+        <div class="contenedor-form">
+           <form action="">
+            <div class="fila mitad">
+                <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                <input type="text" placeholder="Direccion de Email" class="input-mitad">
+            </div>
+            <div class="fila">
+                <input type="text" placeholder="Tema ..." class="input-full">
+            </div>
+            <div class="fila">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+            </div>
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+           </form> 
+        </div>
+    </section>
+ <footer>
+    <p>Creado por Evelin Escudero</p>
+ </footer>
+
+ <script src="script.js"></script>
+ 
+</body>
 </html>
